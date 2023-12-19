@@ -13,7 +13,12 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
-  <script src="js/footer.js"></script>
+  <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#footerContent").load("footer.html"); 
+    });
+    </script> 
   <style>
     .menu-index {
       color: rgb(255, 255, 255) !important;
@@ -347,17 +352,8 @@
         <!-------------------------------------------------------------------------------------------->
       </div>
     </div>
-    <div class="banner" id="footer">
-      <div class="banner-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text no-bottom-margin">
-              © 2022-2027 AI4Intelligence Project. All Rights Reserved. 
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    <div id="footerContent"></div>
     <!-------------------------------------------------------------------------------------------->
   </div>
 </body>

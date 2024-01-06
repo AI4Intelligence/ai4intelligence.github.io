@@ -5,8 +5,19 @@ h1, h2, h3 {
   color: #333333; 
 }
 
- #footer.banner {
+#footer.banner {
   background-color: #333333;
+}
+
+.attribution_text {
+  font-size: 13px; 
+  text-align: right; 
+  color: rgba(255, 255, 255, 0.5); 
+}
+
+.attr_link {
+  text-decoration: underline !important;
+  color: inherit !important; 
 }
 
 @media screen and (min-width: 900px) {
